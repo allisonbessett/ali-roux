@@ -1,14 +1,24 @@
 .landing {
+    padding-top: 5rem;
     .container {
-        background: lightgray;
-    }
-    .interior {
-        background: white;
+        border: 2px solid lightgray;
     }
     .title {
-        margin: 0 auto;
+        font-family: 'Playfair Display', serif;
+        padding-top: 4rem;
+        h1 {
+            font-size: 5rem;
+            text-align: center;
+        }
     }
     .inline {
         display: inline;
+        color: gray;
+        font-family: 'Karla', sans-serif;
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+    }
+    .image {
+        padding: 2rem;
     }
 }
