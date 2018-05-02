@@ -12,6 +12,18 @@ export const appRoutes: Routes = [
     path: 'home',
     loadChildren: './components/landing/landing.module#LandingModule',
   },
+  {
+    path: 'travel',
+    loadChildren: './components/travel/travel.module#TravelModule',
+  },
+  // {
+  //   path: 'recipes',
+  //   loadChildren: './components/recipes/recipes.module#RecipesModule'
+  // },
+  // {
+  //   path: 'about',
+  //   loadChildren: './components/about/about.module#AboutModule'
+  // }
 //   {
 //       path: '**',
 //       component: PageNotFoundComponent
