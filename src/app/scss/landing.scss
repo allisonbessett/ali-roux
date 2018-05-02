@@ -2,6 +2,7 @@
     padding-top: 5rem;
     .container {
         border: 2px solid lightgray;
+        padding-bottom: 4rem;
     }
     .title {
         font-family: 'Playfair Display', serif;
@@ -39,5 +40,12 @@
         padding: 11rem 1rem 0;
         width: 25%;
         display: inline-block
+    }
+    .line {
+        line-height: 1.6em;
+        margin-top: -1.6em;
+        margin-bottom: 1.6em;
+        font-size: 14px;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
     }
 }
