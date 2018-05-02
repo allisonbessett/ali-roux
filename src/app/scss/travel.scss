@@ -1,4 +1,4 @@
-.landing {
+.travel {
     padding-top: 5rem;
     .container {
         border: 2px solid lightgray;
@@ -11,6 +11,11 @@
             font-size: 5rem;
             text-align: center;
         }
+    }
+    h3 {
+        text-align: center;
+        padding-top: 2rem;
+        color: gray;
     }
     a {
         color: gray;
