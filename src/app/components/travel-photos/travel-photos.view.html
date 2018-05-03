@@ -1,0 +1,7 @@
+<mat-card>
+    <mat-card-title>Specific Trip</mat-card-title>
+    <mat-grid-list cols="3" gutterSize="4px">
+        <mat-grid-tile *ngFor="let photo of photos" [ngClass]="{selected: photo.id === selectedPhoto}">
+        </mat-grid-tile>
+    </mat-grid-list>
+</mat-card>

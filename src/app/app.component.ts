@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-portfolio',
+  selector: 'app-content',
     template: `
-    <div class="wrapper">
         <router-outlet></router-outlet>
-    </div>
   `,
 })
 export class AppComponent {
