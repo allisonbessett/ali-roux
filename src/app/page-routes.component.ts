@@ -23,7 +23,11 @@ export const appRoutes: Routes = [
   // {
   //   path: 'about',
   //   loadChildren: './components/about/about.module#AboutModule'
-  // }
+  // },
+  {
+    path: 'travel/:id',
+    loadChildren: './components/photos/photos.module#PhotosModule'
+  }
 //   {
 //       path: '**',
 //       component: PageNotFoundComponent
