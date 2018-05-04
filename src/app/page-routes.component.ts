@@ -26,7 +26,7 @@ export const appRoutes: Routes = [
   // },
   {
     path: 'travel/:id',
-    loadChildren: './components/photos/photos.module#PhotosModule'
+    loadChildren: './components/travel-photos/travel-photos.module#PhotosModule'
   }
 //   {
 //       path: '**',

@@ -20,6 +20,17 @@ import { Album } from './travel';
     ) {}
 
     ngOnInit() {
-      this.albums = this.travelService.get
+      this.albums = this.travelService.getAlbums();
+      this.route.parent.children.find(r => r.outlet === 'desc')
+      .params.subscribe((params: any) => {
+        if (params.id) {
+          this.selectedAlbum = +params.id;
+        }
+      });
+    }
+
+    showDesc(id: number) {
+      this.selectedAlbum = id;
+      this.router.navigate(['/albums', {outlets: {'desc': [id]}}]);
     }
   }

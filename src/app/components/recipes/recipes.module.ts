@@ -1,5 +1,5 @@
-import { TravelService } from './travel.service';
-import { TravelComponent } from './travel.component';
+import { RecipeComponent } from './recipes.component';
+import { RecipeService } from './recipes.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
@@ -9,7 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    component: TravelComponent,
+    component: RecipeComponent,
   },
 ];
 
@@ -22,9 +22,9 @@ const routes: Routes = [
     // BrowserAnimationsModule
   ],
   declarations: [
-    TravelComponent
+    RecipeComponent
   ],
   providers: []
 })
 
-export class TravelModule {}
+export class RecipeModule {}
