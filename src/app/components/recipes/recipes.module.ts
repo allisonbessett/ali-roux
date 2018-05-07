@@ -1,3 +1,4 @@
+import { BeetMuffinComponent } from './method/beet-muffins/beet-muffins-recipe.component';
 import { RecipeComponent } from './recipes.component';
 import { RecipeService } from './recipes.service';
 import { NgModule } from '@angular/core';
@@ -22,7 +23,8 @@ const routes: Routes = [
     // BrowserAnimationsModule
   ],
   declarations: [
-    RecipeComponent
+    RecipeComponent,
+    BeetMuffinComponent
   ],
   providers: []
 })
