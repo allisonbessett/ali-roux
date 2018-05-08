@@ -4,8 +4,6 @@ import { RecipeService } from './recipes.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { MatCardModule, MatGridListModule } from '@angular/material';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const routes: Routes = [
   {
@@ -17,10 +15,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forChild(routes),
-    CommonModule,
-    MatCardModule,
-    MatGridListModule,
-    // BrowserAnimationsModule
+    CommonModule
   ],
   declarations: [
     RecipeComponent,
