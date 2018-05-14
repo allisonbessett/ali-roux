@@ -1,3 +1,6 @@
+import { TravelAlbum } from './travel-album';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCard, MatCardModule, MatGridListModule } from '@angular/material';
 import { TravelService } from './travel.service';
 import { TravelComponent } from './travel.component';
 import { NgModule } from '@angular/core';
@@ -14,12 +17,16 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forChild(routes),
-    CommonModule
+    CommonModule,
+    MatCardModule,
+    MatGridListModule
   ],
   declarations: [
     TravelComponent
   ],
-  providers: []
+  providers: [
+    TravelService
+  ]
 })
 
 export class TravelModule {}

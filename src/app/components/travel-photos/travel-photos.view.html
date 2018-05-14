@@ -1,7 +1,17 @@
-<mat-card>
-    <mat-card-title>Specific Trip</mat-card-title>
-    <mat-grid-list cols="3" gutterSize="4px">
-        <mat-grid-tile *ngFor="let photo of photos" [ngClass]="{selected: photo.id === selectedPhoto}">
-        </mat-grid-tile>
-    </mat-grid-list>
-</mat-card>
+<div class="travel">
+    <div class="container">
+        <div class="interior">
+            <div class="header">
+                <div class="title">
+                    <h1>Ali Roux</h1>
+                </div>
+            </div>
+            <div class="page">
+                <mat-grid-list cols="3" gutterSize="4px">
+                    <mat-grid-tile *ngFor="let photo of photos" [ngClass]="{selected: photo.id === selectedPhoto}">
+                    </mat-grid-tile>
+                </mat-grid-list>
+            </div>
+        </div>
+    </div>
+</div>

@@ -20,7 +20,7 @@ export const appRoutes: Routes = [
    component: TravelComponent,
    children: [
      {
-       path: ':id', component: TravelPhotosComponent,
+       path: ':id', component: TravelPhotosComponent, outlet: 'album'
      }
    ]
   },
@@ -41,3 +41,10 @@ export const appRoutes: Routes = [
 //       component: PageNotFoundComponent
 //   }
 ];
+
+@NgModule( {
+  imports: [RouterModule.forRoot(appRoutes)],
+  exports: [RouterModule],
+  providers: []
+})
+export class RoutingModule {}
