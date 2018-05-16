@@ -17,12 +17,12 @@ export const appRoutes: Routes = [
   },
   {
     path: 'travel',
-   component: TravelComponent,
-   children: [
-     {
-       path: ':id', component: TravelPhotosComponent, outlet: 'album'
-     }
-   ]
+   component: TravelComponent
+  //  children: [
+  //    {
+  //      path: ':id', component: TravelComponent, outlet: 'album'
+  //    }
+  //  ]
   },
   // {
   //   path: 'recipes',

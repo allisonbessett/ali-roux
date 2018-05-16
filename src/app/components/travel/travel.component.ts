@@ -28,6 +28,7 @@ import { TravelAlbum } from './travel-album';
       // });
       console.log('onInit1');
       this.albums = this.travelService.getAlbums();
+      console.log(this.route.children);
       this.route.parent.children
       .find(a => a.outlet === 'album')
       .params
