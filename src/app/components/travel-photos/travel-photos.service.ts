@@ -1,4 +1,4 @@
-import { Photo } from './travel-photos';
+import { Photo } from './photo';
 import { Injectable } from '@angular/core';
 
 @Injectable()

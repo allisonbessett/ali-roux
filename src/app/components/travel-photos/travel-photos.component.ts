@@ -12,12 +12,15 @@ import { Component, OnInit } from '@angular/core';
     currentPhoto: Photo;
 
     constructor(
-      private travelPhotosService: TravelPhotosService
+      private travelPhotosService: TravelPhotosService,
+      private route: ActivatedRoute,
     ) {
 
     }
 
     ngOnInit() {
-      this.photos = this.travelPhotosService.getPhotos();
+      this.route.params.subscribe((params: {id: string}) => {
+        this.currentPhoto = this.travelPhotosService.getPhotosById(params.id);
+      });
     }
   }

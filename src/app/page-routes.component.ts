@@ -1,3 +1,4 @@
+import { TravelAlbumComponent } from './components/travel/travel-album/travel-album.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, Router, ActivatedRoute } from '@angular/router';
@@ -8,7 +9,7 @@ import { TravelPhotosComponent } from './components/travel-photos/travel-photos.
 export const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -16,13 +17,24 @@ export const appRoutes: Routes = [
   component: LandingComponent,
   },
   {
+    path: 'travel/:id',
+    component: TravelPhotosComponent
+  },
+  {
     path: 'travel',
-   component: TravelComponent
-  //  children: [
-  //    {
-  //      path: ':id', component: TravelComponent, outlet: 'album'
-  //    }
-  //  ]
+   component: TravelComponent,
+   children: [
+    //  {
+    //    path: ':id',
+    //    component: TravelAlbumComponent,
+    //    outlet: 'album'
+    //  },
+     {
+       path: 'travel/:id',
+       component: TravelPhotosComponent,
+       outlet: 'photos'
+     }
+   ]
   },
   // {
   //   path: 'recipes',

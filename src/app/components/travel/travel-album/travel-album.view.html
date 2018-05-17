@@ -1,0 +1,6 @@
+<div *ngFor="let album of albums" (click)="showAlbum(album)" class="panel panel-default">
+    <div class="panel-body">
+        <h3><em>{{album.name}}</em></h3>
+        <h3><em>{{album.src}}</em></h3>
+    </div>
+</div>

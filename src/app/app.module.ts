@@ -1,3 +1,4 @@
+import { TravelAlbumComponent } from './components/travel/travel-album/travel-album.component';
 import { TravelPhotosComponent } from './components/travel-photos/travel-photos.component';
 import { TravelComponent } from './components/travel/travel.component';
 import { LandingComponent } from './components/landing/landing.component';
@@ -13,7 +14,8 @@ import { MatCardModule } from '@angular/material';
     AppComponent,
     LandingComponent,
     TravelComponent,
-    TravelPhotosComponent
+    TravelPhotosComponent,
+    TravelAlbumComponent
   ],
   imports: [
     BrowserModule,

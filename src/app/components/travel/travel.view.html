@@ -28,10 +28,12 @@
                 </div>
             </nav>
             <div class="line"></div>
-            <mat-grid-list cols="3" gutterSize="4px">
-                <mat-grid-tile *ngFor="let album of albums" [ngClass]="{selected: album.id === selectedAlbum}" (click)="showAlbum(album.id)">
-                </mat-grid-tile>
-            </mat-grid-list>
+            <!-- <div class="columns">
+                <mat-card>
+                    <router-outlet name="album"></router-outlet>
+                </mat-card>
+            </div> -->
+            <app-travel-album></app-travel-album>
         </div>
     </div>
 </div>
