@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   })
 
   export class TravelPhotosComponent implements OnInit {
-    photos: Photo[]= [];
+    // photos: Photo[]= [];
     currentPhoto: Photo;
 
     constructor(
@@ -18,9 +18,14 @@ import { Component, OnInit } from '@angular/core';
 
     }
 
+  //   albums: Photo[] = [
+  //     {id: 1, name: 'Iceland', src:
+  //     'https://github.com/allisonbessett/ali-roux/blob/master/src/app/images/Iceland/geyser-cover.jpg?raw=true'},
+  // ];
+
     ngOnInit() {
-      this.route.params.subscribe((params: {id: string}) => {
-        this.currentPhoto = this.travelPhotosService.getPhotosById(params.id);
-      });
+      // this.route.params.subscribe((params: {id: string}) => {
+      //   this.currentPhoto = this.travelPhotosService.getPhotosById(params.id);
+      // });
     }
   }

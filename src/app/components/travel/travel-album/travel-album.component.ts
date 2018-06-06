@@ -17,7 +17,9 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 
     albums: TravelAlbum[] = [
       {id: 1, name: 'Iceland', src:
-     '../../../images/iceland/geyser-cover.jpg'},
+      'https://github.com/allisonbessett/ali-roux/blob/master/src/app/images/Iceland/geyser-cover.jpg?raw=true'},
+      {id: 2, name: 'Iceland2', src:
+      'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/Iceland/dynjandi.jpg'},
   ];
 
 
@@ -25,10 +27,12 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
       private router: Router,
       private route: ActivatedRoute,
       private travelService: TravelService
-    ) {}
+    ) {
+    }
 
     ngOnInit() {
       console.log('onInit1');
+      return this.albums;
       // this.albums = this.travelService.getAlbums();
       // console.log(this.route.children);
       // this.route.parent.children
@@ -41,6 +45,16 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
       //   }
       //   console.log('onInit3');
       // });
+    }
+
+    // getAlbums() {
+    //   console.log('getAlbum');
+    //     return this.albums;
+    // }
+
+    getAlbumsById(id) {
+      console.log('getById1');
+        return this.albums.find(album => album.id === Number(id));
     }
 
     showAlbum(clickedAlbum: TravelAlbum) {

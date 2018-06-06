@@ -16,21 +16,21 @@ export const appRoutes: Routes = [
     path: 'home',
   component: LandingComponent,
   },
-  {
-    path: 'travel/:id',
-    component: TravelPhotosComponent
-  },
+  // {
+  //   path: 'travel/:id',
+  //   component: TravelPhotosComponent
+  // },
   {
     path: 'travel',
    component: TravelComponent,
    children: [
-    //  {
-    //    path: ':id',
-    //    component: TravelAlbumComponent,
-    //    outlet: 'album'
-    //  },
      {
-       path: 'travel/:id',
+       path: 'album',
+       component: TravelAlbumComponent,
+       outlet: 'album'
+     },
+     {
+       path: ':id',
        component: TravelPhotosComponent,
        outlet: 'photos'
      }
