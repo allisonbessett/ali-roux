@@ -12,14 +12,16 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 
   export class TravelAlbumComponent implements OnInit {
 
-    // selectedAlbum: number;
-    // currentAlbum: TravelAlbum;
+    selectedAlbum: number;
+    currentAlbum: TravelAlbum;
 
     albums: TravelAlbum[] = [
       {id: 1, name: 'Iceland', src:
       'https://github.com/allisonbessett/ali-roux/blob/master/src/app/images/Iceland/geyser-cover.jpg?raw=true'},
-      {id: 2, name: 'Iceland2', src:
-      'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/Iceland/dynjandi.jpg'},
+      {id: 2, name: 'Scotland', src:
+      'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/scotland/cover.jpg'},
+      {id: 3, name: 'Scotland2', src:
+      'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/scotland/cover.jpg'},
   ];
 
 
@@ -33,7 +35,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
     ngOnInit() {
       console.log('onInit1');
       return this.albums;
-      // this.albums = this.travelService.getAlbums();
+      // this.albums = this.getAlbums();
       // console.log(this.route.children);
       // this.route.parent.children
       // .find(a => a.outlet === 'album')
@@ -47,10 +49,10 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
       // });
     }
 
-    // getAlbums() {
-    //   console.log('getAlbum');
-    //     return this.albums;
-    // }
+    getAlbums() {
+      console.log('getAlbum');
+        return this.albums;
+    }
 
     getAlbumsById(id) {
       console.log('getById1');

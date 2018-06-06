@@ -1,7 +1,8 @@
-<div *ngFor="let album of albums" (click)="getAlbumsById()" class="panel panel-default">
-    <div class="panel-body">
-        <h3><em>{{album.name}}</em></h3>
-        <h3><em>{{album.src}}</em></h3>
-        <img src={{album.src}}>
+<div class="travel">
+    <div *ngFor="let album of albums" (click)="getAlbumsById()">
+        <div class="panel-body col-lg-3 col-md-3 col-sm-4 col-xs-12 showAlbum()">
+            <h3><em>{{album.name}}</em></h3>
+            <img class="image" src={{album.src}}>
+        </div>
     </div>
 </div>

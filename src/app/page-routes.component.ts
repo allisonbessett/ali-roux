@@ -36,10 +36,10 @@ export const appRoutes: Routes = [
      }
    ]
   },
-  // {
-  //   path: 'recipes',
-  //   loadChildren: './components/recipes/recipes.module#RecipesModule'
-  // },
+  {
+    path: 'recipes',
+    loadChildren: './components/recipes/recipes.module#RecipesModule'
+  },
   // {
   //   path: 'about',
   //   loadChildren: './components/about/about.module#AboutModule'

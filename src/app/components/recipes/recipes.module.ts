@@ -21,7 +21,9 @@ const routes: Routes = [
     RecipeComponent,
     BeetMuffinComponent
   ],
-  providers: []
+  providers: [
+    RecipeService
+  ]
 })
 
-export class RecipeModule {}
+export class RecipesModule {}

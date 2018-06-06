@@ -14,7 +14,6 @@
     }
     h3 {
         text-align: center;
-        padding-top: 2rem;
         color: gray;
     }
     a {
@@ -34,20 +33,20 @@
         font-size: 1.2rem;
         letter-spacing: 0.1rem;
     }
-    .travel-image {
-        // display: flex;
-        // flex-direction: row;
-        // justify-content: flex-start;
-        // padding: 11rem 1rem 0;
-        width: 27rem;
-        height: auto;
-        display: inline-block
-    }
     .line {
         line-height: 1.6em;
-        margin-top: -1.6em;
-        margin-bottom: 1.6em;
         font-size: 14px;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
+    }
+    .panel-body {
+        text-align: center;
+        margin-top: -5rem;
+        font-size: 1.7rem;
+        letter-spacing: 0.1rem;
+    }
+    .image {
+        width: 18rem;
+        height: auto;
+        display: inline-block;
     }
 }

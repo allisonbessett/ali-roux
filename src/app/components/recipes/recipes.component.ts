@@ -5,8 +5,8 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 
 @Component ({
     selector: 'app-recipe',
-    templateUrl: './recipe.view.html',
-    styleUrls: ['../../scss/recipe.scss']
+    templateUrl: './recipes.view.html',
+    styleUrls: ['../../scss/recipes.scss']
   })
 
   export class RecipeComponent implements OnInit {
