@@ -1,3 +1,5 @@
+import { RecipesMethodComponent } from './components/recipes/method/recipes-method.component';
+import { RecipesComponent } from './components/recipes/recipes.component';
 import { TravelAlbumComponent } from './components/travel/travel-album/travel-album.component';
 import { TravelPhotosComponent } from './components/travel-photos/travel-photos.component';
 import { TravelComponent } from './components/travel/travel.component';
@@ -15,7 +17,9 @@ import { MatCardModule } from '@angular/material';
     LandingComponent,
     TravelComponent,
     TravelPhotosComponent,
-    TravelAlbumComponent
+    TravelAlbumComponent,
+    RecipesComponent,
+    RecipesMethodComponent
   ],
   imports: [
     BrowserModule,

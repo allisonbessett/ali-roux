@@ -22,6 +22,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
       'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/scotland/cover.jpg'},
       {id: 3, name: 'Scotland2', src:
       'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/scotland/cover.jpg'},
+      {id: 4, name: 'Luleå', src: }
   ];
 
 

@@ -16,12 +16,8 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
     currentRecipe: RecipesMethod;
 
     recipes: RecipesMethod[] = [
-      {id: 1, name: 'Iceland', src:
-      'https://github.com/allisonbessett/ali-roux/blob/master/src/app/images/Iceland/geyser-cover.jpg?raw=true'},
-      {id: 2, name: 'Scotland', src:
-      'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/scotland/cover.jpg'},
-      {id: 3, name: 'Scotland2', src:
-      'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/scotland/cover.jpg'},
+      {id: 1, name: 'Beet Muffins', src:
+      'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/recipes/beet-muffin-cover.jpg'},
   ];
 
   constructor (
