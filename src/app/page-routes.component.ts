@@ -1,3 +1,5 @@
+import { RecipesMethodComponent } from './components/recipes/method/recipes-method.component';
+import { RecipesComponent } from './components/recipes/recipes.component';
 import { TravelAlbumComponent } from './components/travel/travel-album/travel-album.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { NgModule } from '@angular/core';
@@ -12,14 +14,12 @@ export const appRoutes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+
   {
     path: 'home',
   component: LandingComponent,
   },
-  // {
-  //   path: 'travel/:id',
-  //   component: TravelPhotosComponent
-  // },
+
   {
     path: 'travel',
    component: TravelComponent,
@@ -36,18 +36,22 @@ export const appRoutes: Routes = [
      }
    ]
   },
+
   {
     path: 'recipes',
-    loadChildren: './components/recipes/recipes.module#RecipesModule'
+    component: RecipesComponent,
+    children: [
+      {
+        path: 'method',
+        component: RecipesMethodComponent,
+        outlet: 'method'
+      }
+    ]
   },
   // {
   //   path: 'about',
   //   loadChildren: './components/about/about.module#AboutModule'
   // },
-  // {
-  //   path: 'travel/:id',
-  //   loadChildren: './components/travel-photos/travel-photos.module#TravelPhotosModule'
-  // }
 //   {
 //       path: '**',
 //       component: PageNotFoundComponent
