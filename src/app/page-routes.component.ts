@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes, Router, ActivatedRoute } from '@angular/router';
 import { TravelComponent } from './components/travel/travel.component';
 import { TravelPhotosComponent } from './components/travel-photos/travel-photos.component';
+import { AboutMeComponent } from './components/about/about-me.component';
 // import { PageNotFoundComponent } from './not-found.component';
 
 export const appRoutes: Routes = [
@@ -48,10 +49,10 @@ export const appRoutes: Routes = [
       }
     ]
   },
-  // {
-  //   path: 'about',
-  //   loadChildren: './components/about/about.module#AboutModule'
-  // },
+  {
+    path: 'about',
+    component: AboutMeComponent
+  },
 //   {
 //       path: '**',
 //       component: PageNotFoundComponent

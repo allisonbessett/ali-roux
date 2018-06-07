@@ -1,0 +1,52 @@
+.about {
+    padding-top: 5rem;
+    .container {
+        border: 2px solid lightgray;
+        padding-bottom: 4rem;
+    }
+    .title {
+        font-family: 'Playfair Display', serif;
+        padding-top: 4rem;
+        h1 {
+            font-size: 5rem;
+            text-align: center;
+        }
+    }
+    h3 {
+        text-align: center;
+        color: gray;
+    }
+    a {
+        color: gray;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type: none;
+        color: gray;
+        padding-right: 5rem;
+    }
+    .nav {
+        justify-content: center;
+        padding: 4rem 2rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+    }
+    .line {
+        line-height: 1.6em;
+        font-size: 14px;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+    }
+    .panel-body {
+        text-align: center;
+        margin-top: -5rem;
+        font-size: 1.7rem;
+        letter-spacing: 0.1rem;
+    }
+    .image {
+        width: 18rem;
+        height: auto;
+        display: inline-block;
+    }
+}

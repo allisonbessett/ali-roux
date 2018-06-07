@@ -20,9 +20,8 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
       'https://github.com/allisonbessett/ali-roux/blob/master/src/app/images/Iceland/geyser-cover.jpg?raw=true'},
       {id: 2, name: 'Scotland', src:
       'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/scotland/cover.jpg'},
-      {id: 3, name: 'Scotland2', src:
-      'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/scotland/cover.jpg'},
-      {id: 4, name: 'Luleå', src: }
+      {id: 3, name: 'Sweden', src:
+      'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/lulea/sunken-ship-cover%20(3).jpg'}
   ];
 
 
