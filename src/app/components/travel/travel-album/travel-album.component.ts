@@ -34,7 +34,8 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 
     ngOnInit() {
       console.log('onInit1');
-      return this.albums;
+      console.log(this.albums);
+      // return this.albums;
       // this.albums = this.getAlbums();
       // console.log(this.route.children);
       // this.route.parent.children
@@ -55,7 +56,8 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
     }
 
     getAlbumsById(id) {
-      console.log('getById1');
+      console.log(id);
+      console.log('getById1' + this.albums.find(album => album.id === Number(id)));
         return this.albums.find(album => album.id === Number(id));
     }
 
