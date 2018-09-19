@@ -38,6 +38,13 @@
         font-size: 14px;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
     }
+    ul {
+        text-align: center;
+        list-style-type: none
+    }
+    .bullet {
+        text-align: center;
+    }
     .panel-body {
         text-align: center;
         margin-top: -5rem;
