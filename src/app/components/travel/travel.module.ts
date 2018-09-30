@@ -1,3 +1,4 @@
+import { TravelPhotosComponent } from './../travel-photos/travel-photos.component';
 import { TravelAlbumComponent } from './travel-album/travel-album.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCard, MatCardModule, MatGridListModule } from '@angular/material';
@@ -23,7 +24,8 @@ const routes: Routes = [
   ],
   declarations: [
     TravelComponent,
-    TravelAlbumComponent
+    TravelAlbumComponent,
+    TravelPhotosComponent
   ],
   providers: [
     TravelService

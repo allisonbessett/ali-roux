@@ -24,6 +24,7 @@ export const appRoutes: Routes = [
   {
     path: 'travel',
    component: TravelComponent,
+  // },
    children: [
      {
        path: 'album',
@@ -33,9 +34,9 @@ export const appRoutes: Routes = [
      {
        path: ':id',
        component: TravelPhotosComponent,
-       outlet: 'photos'
+       outlet: 'photo'
      }
-   ]
+   ],
   },
 
   {

@@ -1,4 +1,4 @@
-<!-- <div class="travel">
+<div *ngIf="!currentAlbum" class="travel">
     <div class="container">
         <div class="interior">
             <div class="header">
@@ -8,10 +8,12 @@
             </div>
             <div class="page">
                 <mat-grid-list cols="3" gutterSize="4px">
-                    <mat-grid-tile *ngFor="let photo of photos" [ngClass]="{selected: photo.id === selectedPhoto}">
-                    </mat-grid-tile>
+                    <!-- <mat-grid-tile *ngFor="let photo of photos" [ngClass]="{selected: photo.id === selectedPhoto}"> -->
+                    <!-- </mat-grid-tile> -->
+                    {{currentAlbum?.photo}}
                 </mat-grid-list>
             </div>
         </div>
     </div>
-</div> -->
+</div>
+

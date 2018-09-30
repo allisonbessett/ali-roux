@@ -15,22 +15,25 @@
                         <a routerLink="/home" routerLinkActive="active">
                             <li class="nav">HOME</li>
                         </a>
-                        <a routerLink="/travel" routerLinkActive="active">
-                            <li class="nav">TRAVEL</li>
+                        <a [routerLink]="['/travel', {outlets: {'list': ['album'], 'photo': ['none']}}]">
+                            <li class=" nav ">TRAVEL</li>
                         </a>
-                        <a routerLink="/recipes" routerLinkActive="active">
-                            <li class="nav">RECIPES</li>
+                        <a routerLink="/recipes " routerLinkActive="active ">
+                            <li class="nav ">RECIPES</li>
                         </a>
-                        <a routerLink="/about" routerLinkActive="active">
-                            <li class="nav">ABOUT ME</li>
+                        <a routerLink="/about " routerLinkActive="active ">
+                            <li class="nav ">ABOUT ME</li>
                         </a>
                     </ul>
                 </div>
             </nav>
-            <div class="line"></div>
+            <div class="line "></div>
             <app-travel-album>
-                <router-outlet name="album"></router-outlet>
+                <router-outlet name="album "></router-outlet>
             </app-travel-album>
+            <app-travel-photos>
+                <router-outlet name="photos "></router-outlet>
+            </app-travel-photos>
         </div>
     </div>
 </div>

@@ -1,4 +1,4 @@
-import { TravelAlbum } from './travel-album';
+import { Travel } from './../travel';
 import { TravelService } from '../travel.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
@@ -11,18 +11,10 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
   })
 
   export class TravelAlbumComponent implements OnInit {
-
+    albums: Travel[] = [];
     selectedAlbum: number;
-    currentAlbum: TravelAlbum;
 
-    albums: TravelAlbum[] = [
-      {id: 1, name: 'Iceland', src:
-      'https://github.com/allisonbessett/ali-roux/blob/master/src/app/images/Iceland/geyser-cover.jpg?raw=true'},
-      {id: 2, name: 'Scotland', src:
-      'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/scotland/cover.jpg'},
-      {id: 3, name: 'Sweden', src:
-      'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/lulea/sunken-ship-cover%20(3).jpg'}
-  ];
+    // currentAlbum: TravelAlbum;
 
 
     constructor (
@@ -35,6 +27,10 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
     ngOnInit() {
       console.log('onInit1');
       console.log(this.albums);
+      // this.route.paramMap.subscribe(params => {
+      //   console.log(params.get('photos'));
+      // this.photos = params.get('photos');
+      // });
       // return this.albums;
       // this.albums = this.getAlbums();
       // console.log(this.route.children);
@@ -48,23 +44,34 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
       //   }
       //   console.log('onInit3');
       // });
+      this.albums = this.travelService.getAlbums();
+      this.route.parent.children.find
+      (a => a.outlet === 'photo').params.subscribe
+      ((params: any) => {
+        if (params.id) {
+          this.selectedAlbum = +params.id;
+        }
+      });
     }
 
-    getAlbums() {
-      console.log('getAlbum');
-        return this.albums;
+    // getAlbums() {
+    //   console.log('getAlbum');
+    //     return this.albums;
+    // }
+
+
+    getAlbumsByID(id: number) {
+      // console.log(id);
+      // console.log('getById1' + this.albums.find(album => album.id === Number(id)));
+        // return this.albums.find(album => album.id === Number(id));
+        this.selectedAlbum = id;
+        this.router.navigate(['/album', {outlets: {'photo': [id]}}]);
     }
 
-    getAlbumsById(id) {
-      console.log(id);
-      console.log('getById1' + this.albums.find(album => album.id === Number(id)));
-        return this.albums.find(album => album.id === Number(id));
-    }
-
-    showAlbum(clickedAlbum: TravelAlbum) {
-      console.log('showAlbum1');
-    this.router.navigate(['/travel', clickedAlbum.id]);
-    console.log('showAlbum2');
-    }
+    // showAlbum(clickedAlbum: TravelAlbum) {
+    //   console.log('showAlbum1');
+    // this.router.navigate(['/travel', clickedAlbum.id]);
+    // console.log('showAlbum2');
+    // }
   }
 

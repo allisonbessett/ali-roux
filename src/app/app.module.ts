@@ -1,9 +1,7 @@
-import { TravelPhotosModule } from './components/travel-photos/travel-photos.module';
 import { LandingModule } from './components/landing/landing.module';
 import { TravelModule } from './components/travel/travel.module';
 import { RecipesModule } from './components/recipes/recipes.module';
 import { AboutMeModule } from './components/about/about-me.module';
-
 import { RoutingModule } from './page-routes.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -23,9 +21,8 @@ import { MatCardModule } from '@angular/material';
     AboutMeModule,
     LandingModule,
     TravelModule,
-    TravelPhotosModule,
     RecipesModule,
-    AboutMeModule
+    AboutMeModule,
   ],
   exports: [RoutingModule],
   providers: [],
