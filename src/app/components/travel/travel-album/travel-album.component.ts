@@ -1,4 +1,4 @@
-import { Travel } from './../travel';
+import { TravelAlbums } from './../travel';
 import { TravelService } from '../travel.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
@@ -6,16 +6,12 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 @Component({
     selector: 'app-travel-album',
     templateUrl: './travel-album.view.html',
-    styleUrls: ['../../../scss/travel.scss'],
-    providers: [TravelService]
+    styleUrls: ['../../../scss/travel.scss']
   })
 
   export class TravelAlbumComponent implements OnInit {
-    albums: Travel[] = [];
+    travelAlbums: TravelAlbums[] = [];
     selectedAlbum: number;
-
-    // currentAlbum: TravelAlbum;
-
 
     constructor (
       private router: Router,
@@ -42,8 +38,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
       //   }
       //   console.log('onInit3');
       // });
-      this.albums = this.travelService.getAlbums();
-      console.log(this.albums);
+      this.travelAlbums = this.travelService.getAlbums();
       // this.route.parent.children.find
       // (a => a.outlet === 'photo').params.subscribe
       // ((params: any) => {
@@ -59,12 +54,12 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
     // }
 
 
-    getAlbumsByID(id: number) {
+    displayPhoto(id: number) {
       // console.log(id);
       // console.log('getById1' + this.albums.find(album => album.id === Number(id)));
         // return this.albums.find(album => album.id === Number(id));
         this.selectedAlbum = id;
-        this.router.navigate(['/album', {outlets: {'photo': [id]}}]);
+        this.router.navigate(['/travel', {outlets: {'photo': [id]}}]);
     }
 
     // showAlbum(clickedAlbum: TravelAlbum) {

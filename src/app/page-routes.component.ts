@@ -9,7 +9,7 @@ import { TravelPhotosComponent } from './components/travel-photos/travel-photos.
 import { AboutMeComponent } from './components/about/about-me.component';
 // import { PageNotFoundComponent } from './not-found.component';
 
-export const appRoutes: Routes = [
+export const routes: Routes = [
   {
     path: '',
     redirectTo: 'home',
@@ -27,7 +27,7 @@ export const appRoutes: Routes = [
   // },
    children: [
      {
-       path: 'album',
+       path: 'travelAlbums',
        component: TravelAlbumComponent,
        outlet: 'album'
      },
@@ -61,7 +61,7 @@ export const appRoutes: Routes = [
 ];
 
 @NgModule( {
-  imports: [RouterModule.forRoot(appRoutes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
   providers: []
 })

@@ -1,4 +1,4 @@
-export class Travel {
+export class TravelAlbums {
   constructor (
     public id?: number,
     public name?: string,
