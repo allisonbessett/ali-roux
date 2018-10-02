@@ -1,6 +1,9 @@
 <div class="travel">
-    <div *ngFor="let album of albums" (click)="getAlbumsByID(album.id)" [ngClass]="{selected: album.id === selectedAlbum}">
-        <div class="panel-body col-lg-3 col-md-3 col-sm-4 col-xs-12 showAlbum()">
+    <div class="panel-body col-lg-3 col-md-3 col-sm-4 col-xs-12">
+        <div *ngFor="let album of albums" (click)="getAlbumsByID(album.id)" [ngClass]="{selected: album.id === selectedAlbum}">
+            {{album.name}}
+            <img class="image" src={{album.src}}/>
+
             <!-- <h3><em><a [routerLink]="['/travel', photos]">{{album.name}}</a></em></h3> -->
             <!-- <a [routerLink]="['/travel', photos]"><img class="image" src={{album.src}}></a> -->
         </div>

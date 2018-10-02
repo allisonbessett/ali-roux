@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { LandingModule } from './components/landing/landing.module';
 import { TravelModule } from './components/travel/travel.module';
 import { RecipesModule } from './components/recipes/recipes.module';
@@ -7,8 +8,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatCardModule } from '@angular/material';
+// import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule, MatButtonModule, MatGridListModule, MatToolbarModule } from '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +25,9 @@ import { MatCardModule } from '@angular/material';
     TravelModule,
     RecipesModule,
     AboutMeModule,
+    MatToolbarModule,
+    MatButtonModule,
+    CommonModule
   ],
   exports: [RoutingModule],
   providers: [],

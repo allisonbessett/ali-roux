@@ -25,8 +25,6 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
     }
 
     ngOnInit() {
-      console.log('onInit1');
-      console.log(this.albums);
       // this.route.paramMap.subscribe(params => {
       //   console.log(params.get('photos'));
       // this.photos = params.get('photos');
@@ -45,13 +43,14 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
       //   console.log('onInit3');
       // });
       this.albums = this.travelService.getAlbums();
-      this.route.parent.children.find
-      (a => a.outlet === 'photo').params.subscribe
-      ((params: any) => {
-        if (params.id) {
-          this.selectedAlbum = +params.id;
-        }
-      });
+      console.log(this.albums);
+      // this.route.parent.children.find
+      // (a => a.outlet === 'photo').params.subscribe
+      // ((params: any) => {
+      //   if (params.id) {
+      //     this.selectedAlbum = +params.id;
+      //   }
+      // });
     }
 
     // getAlbums() {

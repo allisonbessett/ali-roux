@@ -27,13 +27,19 @@
                     </ul>
                 </div>
             </nav>
-            <div class="line "></div>
-            <app-travel-album>
-                <router-outlet name="album "></router-outlet>
-            </app-travel-album>
-            <app-travel-photos>
-                <router-outlet name="photos "></router-outlet>
-            </app-travel-photos>
+            <div class="line"></div>
+            <div class="columns">
+                <mat-card>
+                    <app-travel-album>
+                        <router-outlet name="album"></router-outlet>
+                    </app-travel-album>
+                </mat-card>
+                <mat-card>
+                    <app-travel-photos>
+                        <router-outlet name="photo"></router-outlet>
+                    </app-travel-photos>
+                </mat-card>
+            </div>
         </div>
     </div>
 </div>
