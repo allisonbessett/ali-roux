@@ -1,7 +1,7 @@
 <div class="travel">
     <mat-grid-list cols="3" gutterSize="6px">
-        <mat-grid-tile *ngFor="let album of travelAlbums" (click)="displayPhoto(album.id)" [ngClass]="{selected: album.id === selectedAlbum}">
-            <img class="image" src={{album.src}}/>
+        <mat-grid-tile *ngFor="let travelAlbum of travelAlbums" (click)="displayPhoto(travelAlbum.id)" [ngClass]="{selected: travelAlbum.id === selectedAlbum}">
+            <img class="image" src={{travelAlbum.src}}/>
             <!-- <h3><em><a [routerLink]="['/travel', photos]">{{album.name}}</a></em></h3> -->
             <!-- <a [routerLink]="['/travel', photos]"><img class="image" src={{album.src}}></a> -->
             ></mat-grid-tile>

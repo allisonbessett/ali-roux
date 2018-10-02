@@ -1,7 +1,7 @@
-import { TravelAlbums } from './../travel';
+import { TravelAlbum } from './../travel';
 import { TravelService } from '../travel.service';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params, Router } from '@angular/router';
+import { ActivatedRoute, Router, Params } from '@angular/router';
 
 @Component({
     selector: 'app-travel-album',
@@ -10,7 +10,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
   })
 
   export class TravelAlbumComponent implements OnInit {
-    travelAlbums: TravelAlbums[] = [];
+    travelAlbums: TravelAlbum[] = [];
     selectedAlbum: number;
 
     constructor (
@@ -21,51 +21,18 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
     }
 
     ngOnInit() {
-      // this.route.paramMap.subscribe(params => {
-      //   console.log(params.get('photos'));
-      // this.photos = params.get('photos');
-      // });
-      // return this.albums;
-      // this.albums = this.getAlbums();
-      // console.log(this.route.children);
+      this.travelAlbums = this.travelService.getAlbums();
       // this.route.parent.children
-      // .find(a => a.outlet === 'album')
+      // .find(r => r.outlet === 'photo')
       // .params
       // .subscribe((params: any) => {
-      //   console.log('onInit2');
-      //   if (params.id) {
-      //     this.selectedAlbum = +params.id;
-      //   }
-      //   console.log('onInit3');
-      // });
-      this.travelAlbums = this.travelService.getAlbums();
-      // this.route.parent.children.find
-      // (a => a.outlet === 'photo').params.subscribe
-      // ((params: any) => {
-      //   if (params.id) {
-      //     this.selectedAlbum = +params.id;
-      //   }
+      //   if (params.id) { this.selectedAlbum = +params.id; }
       // });
     }
 
-    // getAlbums() {
-    //   console.log('getAlbum');
-    //     return this.albums;
-    // }
-
-
     displayPhoto(id: number) {
-      // console.log(id);
-      // console.log('getById1' + this.albums.find(album => album.id === Number(id)));
-        // return this.albums.find(album => album.id === Number(id));
         this.selectedAlbum = id;
         this.router.navigate(['/travel', {outlets: {'photo': [id]}}]);
     }
-
-    // showAlbum(clickedAlbum: TravelAlbum) {
-    //   console.log('showAlbum1');
-    // this.router.navigate(['/travel', clickedAlbum.id]);
-    // console.log('showAlbum2');
-    // }
   }
 

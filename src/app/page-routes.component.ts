@@ -27,7 +27,7 @@ export const routes: Routes = [
   // },
    children: [
      {
-       path: 'travelAlbums',
+       path: 'travelAlbum',
        component: TravelAlbumComponent,
        outlet: 'album'
      },

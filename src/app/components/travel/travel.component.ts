@@ -1,7 +1,5 @@
 import { TravelService } from './travel.service';
 import { Component } from '@angular/core';
-
-
 @Component({
     selector: 'app-travel',
     templateUrl: './travel.view.html',

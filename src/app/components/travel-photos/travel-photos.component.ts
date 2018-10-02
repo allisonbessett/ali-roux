@@ -1,4 +1,4 @@
-import { Travel } from './../travel/travel';
+import { TravelAlbum } from './../travel/travel';
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { TravelService } from '../travel/travel.service';
@@ -10,7 +10,7 @@ import { TravelService } from '../travel/travel.service';
 
   export class TravelPhotosComponent implements OnInit {
     // photos: Photo[] = [];
-    currentAlbum: Travel;
+    currentAlbum: TravelAlbum;
     // photos: string;
 
     constructor(

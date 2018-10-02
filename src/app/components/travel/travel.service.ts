@@ -1,10 +1,10 @@
-import { TravelAlbums } from './travel';
+import { TravelAlbum } from './travel';
 import { Injectable } from '@angular/core';
 
 @Injectable()
 export class TravelService {
 
-  private travelAlbums: TravelAlbums[] = [
+  private travelAlbum: TravelAlbum[] = [
     {id: 1, name: 'Iceland', src:
     'https://github.com/allisonbessett/ali-roux/blob/master/src/app/images/Iceland/geyser-cover.jpg?raw=true',
      photo: 'https://github.com/allisonbessett/ali-roux/blob/master/src/app/images/iceland/beach.jpg?raw=true'},
@@ -19,10 +19,10 @@ constructor() {
 }
 
 getAlbums() {
-  return this.travelAlbums;
+  return this.travelAlbum;
 }
 
 getAlbumByID(id) {
-  return this.travelAlbums.find(album => album.id === Number(id));
+  return this.travelAlbum.find(travelAlbum => travelAlbum.id === Number(id));
 }
 }
