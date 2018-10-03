@@ -1,8 +1,8 @@
 <div class="travel">
     <div class="page">
         <mat-grid-list cols="3" gutterSize="4px">
+            <mat-card-title>{{currentAlbum?.name}}</mat-card-title>
             <mat-grid-tile>
-                {{currentAlbum?.name}}
                 <img class="image" src={{currentAlbum?.photo}}/>
             </mat-grid-tile>
         </mat-grid-list>
