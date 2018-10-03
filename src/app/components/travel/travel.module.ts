@@ -1,7 +1,7 @@
 import { TravelPhotosComponent } from './../travel-photos/travel-photos.component';
 import { TravelAlbumComponent } from './travel-album/travel-album.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCard, MatCardModule, MatGridListModule } from '@angular/material';
+import { MatCardModule, MatGridListModule } from '@angular/material';
 import { TravelService } from './travel.service';
 import { TravelComponent } from './travel.component';
 import { NgModule } from '@angular/core';
@@ -20,7 +20,8 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     CommonModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    BrowserAnimationsModule
   ],
   declarations: [
     TravelComponent,

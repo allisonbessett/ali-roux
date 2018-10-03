@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { TravelService } from '../travel/travel.service';
 
 @Component({
-    selector: 'app-travel-photos',
+    selector: 'app-travel-photo',
     templateUrl: './travel-photos.view.html'
   })
 

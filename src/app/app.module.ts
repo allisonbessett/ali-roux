@@ -9,7 +9,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 // import { MatGridListModule } from '@angular/material/grid-list';
-import { MatCardModule, MatButtonModule, MatGridListModule, MatToolbarModule } from '@angular/material';
+import { MatCardModule, MatGridListModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -25,8 +25,6 @@ import { MatCardModule, MatButtonModule, MatGridListModule, MatToolbarModule } f
     TravelModule,
     RecipesModule,
     AboutMeModule,
-    MatToolbarModule,
-    MatButtonModule,
     CommonModule
   ],
   exports: [RoutingModule],
