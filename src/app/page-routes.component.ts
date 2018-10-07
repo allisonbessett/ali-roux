@@ -1,11 +1,11 @@
-import { RecipesMethodComponent } from './components/recipes/method/recipes-method.component';
+import { TravelPhotosComponent } from './components/travel/travel-photos/travel-photos.component';
+import { RecipePhotosComponent } from './components/recipes/recipe-photos/recipe-photos.component';
 import { RecipesComponent } from './components/recipes/recipes.component';
 import { TravelAlbumComponent } from './components/travel/travel-album/travel-album.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, Router, ActivatedRoute } from '@angular/router';
 import { TravelComponent } from './components/travel/travel.component';
-import { TravelPhotosComponent } from './components/travel-photos/travel-photos.component';
 import { AboutMeComponent } from './components/about/about-me.component';
 // import { PageNotFoundComponent } from './not-found.component';
 
@@ -44,10 +44,15 @@ export const routes: Routes = [
     component: RecipesComponent,
     children: [
       {
-        path: 'method',
-        component: RecipesMethodComponent,
-        outlet: 'method'
+        path: 'photos',
+        component: RecipePhotosComponent,
+        outlet: 'photos'
       }
+      // {
+      //   path: 'method',
+      //   component: RecipesMethodComponent,
+      //   outlet: 'method'
+      // }
     ]
   },
   {

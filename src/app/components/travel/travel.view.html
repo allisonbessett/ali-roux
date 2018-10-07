@@ -16,13 +16,13 @@
                             <li class="nav">HOME</li>
                         </a>
                         <a [routerLink]="['/travel', {outlets: {'album': ['travelAlbum'], 'photo': ['none']}}]">
-                            <li class=" nav ">TRAVEL</li>
+                            <li class="nav">TRAVEL</li>
                         </a>
-                        <a routerLink="/recipes " routerLinkActive="active ">
-                            <li class="nav ">RECIPES</li>
+                        <a routerLink="/recipes" routerLinkActive="active ">
+                            <li class="nav">RECIPES</li>
                         </a>
-                        <a routerLink="/about " routerLinkActive="active ">
-                            <li class="nav ">ABOUT ME</li>
+                        <a routerLink="/about" routerLinkActive="active ">
+                            <li class="nav">ABOUT ME</li>
                         </a>
                     </ul>
                 </div>
@@ -30,14 +30,10 @@
             <div class="line"></div>
             <div class="columns">
                 <mat-card>
-                    <app-travel-album>
-                        <router-outlet name="album"></router-outlet>
-                    </app-travel-album>
+                    <router-outlet name="album"></router-outlet>
                 </mat-card>
                 <mat-card>
-                    <!-- <app-travel-photo> -->
                     <router-outlet name="photo"></router-outlet>
-                    <!-- </app-travel-photo> -->
                 </mat-card>
             </div>
         </div>

@@ -12,7 +12,6 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
   export class TravelAlbumComponent implements OnInit {
     travelAlbums: TravelAlbum[] = [];
     selectedAlbum: number;
-    params: Params;
 
     constructor (
       private router: Router,

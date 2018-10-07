@@ -1,7 +1,7 @@
-import { TravelAlbum } from './../travel/travel';
+import { TravelService } from './../travel.service';
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { TravelService } from '../travel/travel.service';
+import {TravelAlbum} from '../travel';
 
 @Component({
     selector: 'app-travel-photo',
