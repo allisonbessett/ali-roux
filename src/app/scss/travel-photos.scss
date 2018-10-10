@@ -1,4 +1,4 @@
-.travel {
+.travel-photos {
     padding-top: 5rem;
     .container {
         border: 2px solid lightgray;
@@ -46,12 +46,9 @@
         flex: 1 1 50%;
         width: 50%;
     }
-    .image {
-        width: 100%;
+    .test {
+        width: 18rem;
         height: auto;
         display: inline-block;
     }
-    // .test {
-    //     padding-top: 15rem;
-    // }
 }
