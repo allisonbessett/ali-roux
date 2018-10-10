@@ -22,12 +22,12 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
 
     ngOnInit() {
       this.travelAlbums = this.travelService.getAlbums();
-      // this.route.parent.children
-      // .find(r => r.outlet === 'photo')
-      // .params
-      // .subscribe((params: any) => {
-      //   if (params.id) { this.selectedAlbum = +params.id; }
-      // });
+      this.route.parent.children
+      .find(r => r.outlet === 'photo')
+      .params
+      .subscribe((params: any) => {
+        if (params.id) { this.selectedAlbum = +params.id; }
+      });
     }
 
     displayPhoto(id: number) {

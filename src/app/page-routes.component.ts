@@ -44,12 +44,12 @@ export const routes: Routes = [
     component: RecipesComponent,
     children: [
       {
-        path: 'photos',
+        path: 'recipePhotos',
         component: RecipePhotosComponent,
         outlet: 'photos'
       }
       // {
-      //   path: 'method',
+      //   path: 'id,
       //   component: RecipesMethodComponent,
       //   outlet: 'method'
       // }

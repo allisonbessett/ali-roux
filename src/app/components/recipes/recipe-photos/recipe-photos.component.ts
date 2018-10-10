@@ -1,17 +1,17 @@
-import { Recipes } from './../recipes';
+import { Recipe } from './../recipes';
 import { RecipesService } from '../recipes.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 
 @Component({
-    selector: 'app-recipes-method',
+    selector: 'app-recipes-photos',
     templateUrl: './recipe-photos.view.html',
     styleUrls: ['../../../scss/recipes.scss'],
     providers: [RecipesService]
   })
 
   export class RecipePhotosComponent implements OnInit {
-    recipePhotos: Recipes[] = [];
+    recipePhotos: Recipe[] = [];
     selectedRecipe: number;
 
   constructor (

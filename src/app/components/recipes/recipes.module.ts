@@ -1,7 +1,6 @@
 import { RecipePhotosComponent } from './recipe-photos/recipe-photos.component';
-// import { BeetMuffinComponent } from './method/beet-muffins/beet-muffins-recipe.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCard, MatCardModule, MatGridListModule } from '@angular/material';
+import { MatCardModule, MatGridListModule } from '@angular/material';
 import { RecipesComponent } from './recipes.component';
 import { RecipesService } from './recipes.service';
 import { NgModule } from '@angular/core';
@@ -20,7 +19,8 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     CommonModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    BrowserAnimationsModule
   ],
   declarations: [
     RecipesComponent,

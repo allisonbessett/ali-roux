@@ -1,7 +1,7 @@
 <div class="recipes">
     <mat-grid-list cols="3" gutterSize="6px">
         <mat-grid-tile *ngFor="let recipe of recipes" (click)="displayMethod(recipe.id)" [ngClass]="{selected: recipe.id === selectedRecipe}">
-            <img class="image" src={{recipes.src}}>
+            <img class="image" src={{recipe.src}}>
         </mat-grid-tile>
     </mat-grid-list>
 </div>
