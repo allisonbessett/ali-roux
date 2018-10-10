@@ -25,8 +25,9 @@ const routes: Routes = [
   ],
   declarations: [
     TravelComponent,
-    TravelAlbumComponent,
-    TravelPhotosComponent
+    TravelPhotosComponent,
+    TravelAlbumComponent
+
   ],
   providers: [
     TravelService

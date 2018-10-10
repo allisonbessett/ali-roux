@@ -1,8 +1,8 @@
-<div class="travel">
+<div class="travel-photos">
     <mat-grid-list cols="3" gutterSize="6px">
         <mat-card-title>{{currentAlbum?.name}}</mat-card-title>
         <mat-grid-tile *ngFor="let photo of currentAlbum?.photo">
-            <img class="image" src={{photo}}/>
+            <img class="image" width="100%" src={{photo}}/>
         </mat-grid-tile>
     </mat-grid-list>
 </div>
