@@ -3,8 +3,9 @@ export class Recipe {
     public id?: number,
     public name?: string,
     public src?: any,
-    public photos?: any,
+    public photo?: any,
     public intro?: any,
-    public ingredients?: any,
-    public method?: any) {}
+    // public ingredients?: any,
+    // public method?: any
+    ) {}
     }

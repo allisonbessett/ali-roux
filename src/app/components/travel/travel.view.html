@@ -18,7 +18,7 @@
                         <a [routerLink]="['/travel', {outlets: {'album': ['travelAlbum'], 'photo': ['none']}}]">
                             <li class="nav">TRAVEL</li>
                         </a>
-                        <a routerLink="/recipes" routerLinkActive="active ">
+                        <a [routerLink]="['/recipes', {outlets: {'photos': ['recipePhotos'], 'method': ['none']}}]">
                             <li class="nav">RECIPES</li>
                         </a>
                         <a routerLink="/about" routerLinkActive="active ">
@@ -29,12 +29,12 @@
             </nav>
             <div class="line"></div>
             <div class="columns">
-                <mat-card>
+                <div ng-hide="true">
                     <router-outlet name="album"></router-outlet>
-                </mat-card>
-                <mat-card>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                     <router-outlet name="photo"></router-outlet>
-                </mat-card>
+                </div>
             </div>
         </div>
     </div>

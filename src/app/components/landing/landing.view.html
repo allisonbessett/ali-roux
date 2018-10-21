@@ -15,7 +15,7 @@
                         <a [routerLink]="['/travel', {outlets: {'album': ['travelAlbum'], 'photo': ['none']}}]">
                             <li class=" nav ">TRAVEL</li>
                         </a>
-                        <a routerLink="/recipes" routerLinkActive="active">
+                        <a [routerLink]="['/recipes', {outlets: {'photos': ['recipePhotos'], 'method': ['none']}}]">
                             <li class="nav">RECIPES</li>
                         </a>
                         <a routerLink="/about" routerLinkActive="active">

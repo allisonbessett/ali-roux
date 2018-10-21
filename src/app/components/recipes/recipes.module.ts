@@ -1,3 +1,4 @@
+import { RecipeMethodComponent } from './recipe-method/recipe-method.component';
 import { RecipePhotosComponent } from './recipe-photos/recipe-photos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule, MatGridListModule } from '@angular/material';
@@ -25,6 +26,7 @@ const routes: Routes = [
   declarations: [
     RecipesComponent,
     RecipePhotosComponent,
+    RecipeMethodComponent
   ],
   providers: [
     RecipesService

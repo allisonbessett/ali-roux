@@ -1,3 +1,4 @@
+import { RecipeMethodComponent } from './components/recipes/recipe-method/recipe-method.component';
 import { TravelPhotosComponent } from './components/travel/travel-photos/travel-photos.component';
 import { RecipePhotosComponent } from './components/recipes/recipe-photos/recipe-photos.component';
 import { RecipesComponent } from './components/recipes/recipes.component';
@@ -24,7 +25,6 @@ export const routes: Routes = [
   {
     path: 'travel',
    component: TravelComponent,
-  // },
    children: [
      {
        path: 'travelAlbum',
@@ -47,13 +47,13 @@ export const routes: Routes = [
         path: 'recipePhotos',
         component: RecipePhotosComponent,
         outlet: 'photos'
+      },
+      {
+        path: ':id',
+        component: RecipeMethodComponent,
+        outlet: 'method'
       }
-      // {
-      //   path: 'id,
-      //   component: RecipesMethodComponent,
-      //   outlet: 'method'
-      // }
-    ]
+    ],
   },
   {
     path: 'about',

@@ -11,7 +11,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
   })
 
   export class RecipePhotosComponent implements OnInit {
-    recipePhotos: Recipe[] = [];
+    recipes: Recipe[] = [];
     selectedRecipe: number;
 
   constructor (
@@ -21,7 +21,8 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
   ) {}
 
   ngOnInit() {
-  this.recipePhotos = this.recipesService.getRecipes();
+    console.log('photos 1');
+  this.recipes = this.recipesService.getRecipes();
          // this.route.parent.children
       // .find(r => r.outlet === 'method')
       // .params
