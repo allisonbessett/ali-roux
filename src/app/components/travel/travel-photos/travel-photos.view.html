@@ -1,5 +1,8 @@
 <div class="travel-photos">
     <mat-grid-list cols="3" gutterSize="6px">
+        <!-- <a [routerLink]="['/travel', {outlets: {'album': ['travelAlbum'], 'photo': ['none']}}]">
+            <li class="nav">Back To Albums</li>
+        </a> -->
         <mat-card-title>{{currentAlbum?.name}}</mat-card-title>
         <mat-grid-tile *ngFor="let photo of currentAlbum?.photo">
             <img class="image" width="100%" src={{photo}}/>

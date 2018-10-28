@@ -23,12 +23,12 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
   ngOnInit() {
     console.log('photos 1');
   this.recipes = this.recipesService.getRecipes();
-         // this.route.parent.children
-      // .find(r => r.outlet === 'method')
-      // .params
-      // .subscribe((params: any) => {
-      //   if (params.id) { this.selectedRecipe = +params.id; }
-      // });
+         this.route.parent.children
+      .find(r => r.outlet === 'method')
+      .params
+      .subscribe((params: any) => {
+        if (params.id) { this.selectedRecipe = +params.id; }
+      });
   }
 
 

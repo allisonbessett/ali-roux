@@ -1,5 +1,5 @@
 import { TravelService } from './travel.service';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 @Component({
     selector: 'app-travel',
     templateUrl: './travel.view.html',
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   })
 
   export class TravelComponent {
+    showAlbum = true;
+    showPhoto = true;
   }
 

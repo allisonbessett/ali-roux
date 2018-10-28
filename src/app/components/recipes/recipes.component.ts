@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
   })
 
   export class RecipesComponent {
+    showRecipe = true;
+    showMethod = true;
   }

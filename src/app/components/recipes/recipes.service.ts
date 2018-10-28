@@ -14,7 +14,7 @@ export class RecipesService {
       {id: 1, name: 'Beet Muffins', src:
       'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/recipes/beet-muffin-cover.jpg',
       photo: 'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/recipes/beet-muffin-cover.jpg',
-      intro: this.beetIntro,
+      intro: 'this.beetIntro',
     }
   ];
 

@@ -28,13 +28,16 @@
                 </div>
             </nav>
             <div class="line"></div>
+             <div *ngIf="!showRecipe" (click)="showRecipe=true; showMethod=false">
+                <li class="nav">Back to Recipes</li>
+            </div>
             <div class="columns">
                 <mat-card>
                     <router-outlet name="photos"></router-outlet>
                 </mat-card>
-                <!-- <mat-card>
+                <mat-card>
                     <router-outlet name="method"></router-outlet>
-                </mat-card> -->
+                </mat-card>
             </div>
         </div>
     </div>

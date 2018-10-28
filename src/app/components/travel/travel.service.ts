@@ -31,7 +31,6 @@ export class TravelService {
       'https://github.com/allisonbessett/ali-roux/blob/master/src/app/images/scotland/church.jpg?raw=true',
       'https://github.com/allisonbessett/ali-roux/blob/master/src/app/images/scotland/me-tantallon.jpg?raw=true',
       'https://github.com/allisonbessett/ali-roux/blob/master/src/app/images/scotland/tantallon.jpg?raw=true',
-
     ]
   },
     {id: 3, name: 'Sweden', src:

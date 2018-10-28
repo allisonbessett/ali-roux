@@ -21,15 +21,6 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
     }
 
     ngOnInit() {
-      this.hideAlbums();
-    }
-
-    displayPhoto(id: number) {
-        this.selectedAlbum = id;
-        this.router.navigate(['/travel', {outlets: {'photo': [id]}}]);
-    }
-
-    hideAlbums() {
       this.travelAlbums = this.travelService.getAlbums();
       this.route.parent.children
       .find(r => r.outlet === 'photo')
@@ -39,5 +30,11 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
       });
     }
 
+    displayPhoto(id: number) {
+      this.selectedAlbum = id;
+      console.log(id);
+      this.router.navigate(['/travel', {outlets: {'photo': [id]}}]);
+      console.log('navigate');
+    }
   }
 

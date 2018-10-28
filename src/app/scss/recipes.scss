@@ -38,14 +38,16 @@
         font-size: 14px;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
     }
-    .panel-body {
-        text-align: center;
-        margin-top: -5rem;
-        font-size: 1.7rem;
-        letter-spacing: 0.1rem;
+    .columns {
+        display: flex;
+        flex-direction: row;
+    }
+    mat-card {
+        flex: 1 1 50%;
+        width: 50%;
     }
     .image {
-        width: 18rem;
+        width: 100%;
         height: auto;
         display: inline-block;
     }
