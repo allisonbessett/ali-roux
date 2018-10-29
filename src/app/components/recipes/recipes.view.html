@@ -18,7 +18,7 @@
                         <a [routerLink]="['/travel', {outlets: {'album': ['travelAlbum'], 'photo': ['none']}}]">
                             <li class=" nav ">TRAVEL</li>
                         </a>
-                        <a routerLink="/recipes" routerLinkActive="active">
+                        <a [routerLink]="['/recipes', {outlets: {'photos': ['recipePhotos'], 'method': ['none']}}]">
                             <li class="nav">RECIPES</li>
                         </a>
                         <a routerLink="/about" routerLinkActive="active">
@@ -28,14 +28,16 @@
                 </div>
             </nav>
             <div class="line"></div>
-             <div *ngIf="!showRecipe" (click)="showRecipe=true; showMethod=false">
-                <li class="nav">Back to Recipes</li>
+            <div *ngIf="!showMethod" (click)="showMethod=true">
+                <a [routerLink]="['/recipes', {outlets: {'photos': ['recipePhotos'], 'method': ['none']}}]">
+                    <li class="nav">Back to Recipes</li>
+                </a>
             </div>
             <div class="columns">
-                <mat-card>
+                <mat-card (click)="showMethod=false" *ngIf="showMethod">
                     <router-outlet name="photos"></router-outlet>
                 </mat-card>
-                <mat-card>
+                <mat-card class="hide" [class.hide]="showMethod">
                     <router-outlet name="method"></router-outlet>
                 </mat-card>
             </div>

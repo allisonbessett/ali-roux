@@ -9,7 +9,5 @@ import { Component, OnInit, Input } from '@angular/core';
 
   export class TravelComponent {
     showAlbum = true;
-
-    // @Input() showPhotos = false;
   }
 

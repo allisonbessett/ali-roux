@@ -29,7 +29,9 @@
             </nav>
             <div class="line"></div>
             <div *ngIf="!showAlbum" (click)="showAlbum=true">
-                <li class="nav">Back to Albums</li>
+                <a [routerLink]="['/travel', {outlets: {'album': ['travelAlbum'], 'photo': ['none']}}]">
+                    <li class="nav">Back to Albums</li>
+                </a>
             </div>
             <div class="columns">
                 <mat-card (click)="showAlbum=false" *ngIf="showAlbum">
