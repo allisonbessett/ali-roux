@@ -1,5 +1,5 @@
 import { TravelService } from './travel.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 @Component({
     selector: 'app-travel',
     templateUrl: './travel.view.html',
@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 
   export class TravelComponent {
     showAlbum = true;
-    showPhoto = true;
+
+    // @Input() showPhotos = false;
   }
 

@@ -28,14 +28,14 @@
                 </div>
             </nav>
             <div class="line"></div>
-            <div *ngIf="!showAlbum" (click)="showAlbum=true; showPhoto=false">
+            <div *ngIf="!showAlbum" (click)="showAlbum=true">
                 <li class="nav">Back to Albums</li>
             </div>
             <div class="columns">
-                <mat-card (click)="showAlbum=false; showPhoto=true" *ngIf="showAlbum">
+                <mat-card (click)="showAlbum=false" *ngIf="showAlbum">
                     <router-outlet name="album"></router-outlet>
                 </mat-card>
-                <mat-card>
+                <mat-card class="hide" [class.hide]="showAlbum">
                     <router-outlet name="photo"></router-outlet>
                 </mat-card>
             </div>

@@ -1,6 +1,6 @@
 import { TravelAlbum } from './../travel';
 import { TravelService } from '../travel.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { ActivatedRoute, Router, Params } from '@angular/router';
 
 @Component({
@@ -12,6 +12,7 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
   export class TravelAlbumComponent implements OnInit {
     travelAlbums: TravelAlbum[] = [];
     selectedAlbum: number;
+    // @Output() showPhotos = new EventEmitter<boolean>();
 
     constructor (
       private router: Router,
@@ -35,6 +36,7 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
       console.log(id);
       this.router.navigate(['/travel', {outlets: {'photo': [id]}}]);
       console.log('navigate');
+      // this.showPhotos.emit(true);
     }
   }
 
