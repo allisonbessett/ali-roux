@@ -29,14 +29,13 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
       .subscribe((params: any) => {
         if (params.id) { this.selectedAlbum = +params.id; }
       });
-    }
+  }
 
     displayPhoto(id: number) {
       this.selectedAlbum = id;
       console.log(id);
       this.router.navigate(['/travel', {outlets: {'photo': [id]}}]);
       console.log('navigate');
-      // this.showPhotos.emit(true);
     }
   }
 

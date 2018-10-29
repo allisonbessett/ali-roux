@@ -1,7 +1,10 @@
 <div class="travel">
     <mat-grid-list cols="3" gutterSize="6px">
         <mat-grid-tile *ngFor="let travelAlbum of travelAlbums" (click)="displayPhoto(travelAlbum.id)" [ngClass]="{selected: travelAlbum.id === selectedAlbum}">
-            <img class="image" src={{travelAlbum.src}}/>
+            <div>
+                <img class="image" src={{travelAlbum.src}}/>
+                <figcaption>{{travelAlbum.name}}</figcaption>
+            </div>
         </mat-grid-tile>
     </mat-grid-list>
 </div>
