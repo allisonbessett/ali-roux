@@ -19,10 +19,6 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
   ) {}
 
   ngOnInit() {
-    // this.route.params.subscribe(params => {
-    //   console.log(params.get('photos'));
-    // photos = params.get('photos');
-    // });
     this.route.params.subscribe((params: {id: string}) => {
       this.currentRecipe = this.recipesService.getRecipeByID(params.id);
     });

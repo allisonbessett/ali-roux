@@ -11,7 +11,6 @@ import { TravelAlbum } from '../travel';
   export class TravelPhotosComponent implements OnInit {
 
     currentAlbum: TravelAlbum;
-    // photos: string;
 
     constructor(
       private travelService: TravelService,

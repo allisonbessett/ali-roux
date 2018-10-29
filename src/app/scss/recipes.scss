@@ -47,8 +47,10 @@
         width: 50%;
     }
     .recipeTitle {
-        color: black;
+        color: gray;
         text-align: center;
+        font-size: 3rem;
+        padding-bottom: 2rem;
     }
     .image {
         width: 100%;
@@ -56,7 +58,27 @@
         // display: inline-block;
         margin: 0;
     }
+    .method {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
     .hide {
         display: none;
+    }
+    figcaption {
+        padding-bottom: 3rem;
+        text-align: center;
+        font-weight: 300;
+        color: darkslategray;
+    }
+    .intro {
+        text-align: center;
+    }
+    .top {
+        padding-top: 4rem;
+    }
+    .ingredients {
+        text-align: center;
     }
 }

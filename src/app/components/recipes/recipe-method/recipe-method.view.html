@@ -1,14 +1,19 @@
 <div class="recipes">
-    <mat-grid-list cols="1">
-        <div>
-            <mat-card-title class="recipeTitle"> {{currentRecipe?.name}}
-            </mat-card-title>
+
+    <div>
+        <mat-card-title class="recipeTitle"> {{currentRecipe?.name}}
+        </mat-card-title>
+    </div>
+    <div *ngFor="let photo of currentRecipe?.photo">
+        <img class="method" src={{photo}}/>
+    </div>
+
+    <div class="top">
+        <div class="intro" *ngFor="let intro of currentRecipe?.intro">
+            {{intro}}
         </div>
-        <mat-grid-tile *ngFor="let photo of currentRecipe?.photo">
-            <img class="method" width="100%" src={{photo}}/>
-        </mat-grid-tile>
-    </mat-grid-list>
-    <div class="intro" *ngFor="let intro of currentRecipe?.intro">
-        {{intro}}
+    </div>
+    <div class="ingredients" *ngFor="let ingredients of currentRecipe?.ingredients">
+        {{ingredients}}
     </div>
 </div>
