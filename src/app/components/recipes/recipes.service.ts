@@ -40,7 +40,9 @@ export class RecipesService {
   '9. Immediately remove muffins from muffin tin and place on a coolingrack. Enjoy!']
     },
     {
-      id: 2, name: 'Cacao Scones with Chocolate Drizzle', src: ''
+      id: 2, name: 'Cacao Scones with Chocolate Drizzle',
+      src: 'https://github.com/allisonbessett/ali-roux/blob/master/src/app/images/recipes/cacao-scone-cover.jpg',
+      photo: ['']
     }
   ];
 
