@@ -16,4 +16,7 @@
     <div class="ingredients" *ngFor="let ingredients of currentRecipe?.ingredients">
         {{ingredients}}
     </div>
+    <div class="directions bottom" *ngFor="let method of currentRecipe?.method">
+        {{method}}
+    </div>
 </div>

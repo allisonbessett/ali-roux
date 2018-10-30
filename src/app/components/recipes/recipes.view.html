@@ -30,7 +30,7 @@
             <div class="line"></div>
             <div *ngIf="!showMethod" (click)="showMethod=true">
                 <a [routerLink]="['/recipes', {outlets: {'photos': ['recipePhotos'], 'method': ['none']}}]">
-                    <li class="nav">Back to Recipes</li>
+                    <li class="nav nav-recipes">Back to Recipes</li>
                 </a>
             </div>
             <div class="columns">

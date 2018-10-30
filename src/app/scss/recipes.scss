@@ -12,11 +12,9 @@
             text-align: center;
         }
     }
-    h3 {
-        text-align: center;
-        color: gray;
-    }
+    h3,
     a {
+        text-align: center;
         color: gray;
     }
     .nav-links {
@@ -32,6 +30,10 @@
         padding: 4rem 2rem;
         font-size: 1.2rem;
         letter-spacing: 0.1rem;
+        text-align: center;
+    }
+    .nav-recipes {
+        margin: -1rem 0;
     }
     .line {
         line-height: 1.6em;
@@ -50,6 +52,7 @@
         color: gray;
         text-align: center;
         font-size: 3rem;
+        margin: -5rem;
         padding-bottom: 2rem;
     }
     .image {
@@ -59,9 +62,11 @@
         margin: 0;
     }
     .method {
-        width: 100%;
+        width: 40%;
         height: auto;
-        margin: 0;
+        margin: 0 auto;
+        display: block;
+        padding-top: 5rem;
     }
     .hide {
         display: none;
@@ -72,13 +77,24 @@
         font-weight: 300;
         color: darkslategray;
     }
-    .intro {
-        text-align: center;
+    .intro,
+    .directions {
+        // text-align: center;
+        line-height: 2rem;
+        letter-spacing: 0.3px;
     }
     .top {
         padding-top: 4rem;
+        padding-bottom: 2rem;
     }
     .ingredients {
         text-align: center;
+        line-height: 2.5rem;
+        letter-spacing: 0.2px;
+        font-weight: 550;
+    }
+    .bottom {
+        padding-top: 2rem;
+        // text-align: right;
     }
 }
