@@ -38,6 +38,9 @@ export class RecipesService {
   '7. Evenly divide batter between the muffin liners and place in the oven.',
   '8. Bake for 20-25 minutes until a toothpick inserted into the middle of a muffin comes out clean.',
   '9. Immediately remove muffins from muffin tin and place on a coolingrack. Enjoy!']
+    },
+    {
+      id: 2, name: 'Cacao Scones with Chocolate Drizzle', src: ''
     }
   ];
 
