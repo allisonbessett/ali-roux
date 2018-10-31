@@ -37,6 +37,12 @@
         width: 30%;
         display: inline-block
     }
+    @media screen and (max-width: 500px) {
+        .image {
+            padding: 0, 0;
+            width: 40%;
+        }
+    }
     .line {
         line-height: 1.6em;
         margin-top: -1.6em;
