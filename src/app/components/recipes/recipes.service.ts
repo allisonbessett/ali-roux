@@ -42,7 +42,32 @@ export class RecipesService {
     {
       id: 2, name: 'Cacao Scones',
       src: 'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/recipes/cacao-scone-cover.jpg',
-      photo: ['https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/recipes/cacao-scone.jpg']
+      photo: ['https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/recipes/cacao-scone.jpg'
+    ],
+    ingredients: ['INGREDIENTS',
+    '-Scones-',
+    '1 ½ cups all purpose flour',
+    '¼ cup cacao powder',
+    '1 ½ teaspoons baking powder',
+    '¼ teaspoon salt',
+    '½ cup buttermilk',
+    '2 tablespoons butter',
+    '¼ cup honey',
+    '¼ cup chocolate chunks',
+    '-Chocolate Drizzle-',
+    '¼ cup of heavy cream',
+    '¼ cup of chopped dark chocolate',
+  ],
+  method: ['1. Heat oven to 425 and line a baking sheet with parchment paper or reusable mat.',
+  '2. In a large bowl, mix the flour, cacao, baking powder, and salt.',
+  '3. Cut butter with a pastry cutter or fork.',
+  '4. Stir in buttermilk and honey. Then fold in the chocolate.',
+  '5. Shape the dough into a cicle 3/4 inches tall and brush the top with milk.',
+  '6. Cut into 8 equal triangles and bake at 425 for 17-19 minutes. Cool on a wire rack.',
+  '7. To prepare the chcolate drizzle, heat the chocolate in the microwave until it starts to melt.',
+  '8. Stir chcolate until smooth and add the heavy cream. Stir until consistent throughout.',
+  '9. Drizzle chocolate on top of cooled scones.'
+]
     }
   ];
 
