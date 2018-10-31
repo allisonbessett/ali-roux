@@ -29,6 +29,9 @@
         font-size: 1.2rem;
         letter-spacing: 0.1rem;
     }
+    .hide-photo {
+        display: none;
+    }
     .image {
         display: flex;
         flex-direction: row;
@@ -37,17 +40,26 @@
         width: 30%;
         display: inline-block
     }
-    @media screen and (max-width: 500px) {
-        .image {
-            padding: 0, 0;
-            width: 40%;
-        }
-    }
     .line {
         line-height: 1.6em;
         margin-top: -1.6em;
         margin-bottom: 1.6em;
         font-size: 14px;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
+    }
+    @media screen and (max-width: 500px) {
+        .hide-photo {
+            display: block;
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .image {
+            display: none;
+        }
+        .nav {
+            padding: 3rem 1.5rem;
+            font-size: 1.5rem;
+        }
     }
 }
