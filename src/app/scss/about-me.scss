@@ -13,6 +13,7 @@
         }
     }
     h3 {
+        padding-top: 1rem;
         text-align: center;
         color: gray;
     }
@@ -51,9 +52,17 @@
         font-size: 1.7rem;
         letter-spacing: 0.1rem;
     }
+    .desc {
+        padding-top: 4rem;
+    }
     .image {
         width: 18rem;
         height: auto;
         display: inline-block;
+    }
+    .me-lulea {
+        width: 100%;
+        height: auto;
+        display: inline;
     }
 }
