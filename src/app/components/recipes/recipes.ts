@@ -4,6 +4,7 @@ export class Recipe {
     public name?: string,
     public src?: any,
     public photo?: any,
+    public servings?: any,
     public intro?: any,
     public ingredients?: any,
     public method?: any

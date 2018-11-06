@@ -10,6 +10,7 @@ export class RecipesService {
       photo: [
         'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/recipes/beet-muffin-cover.jpg',
   ],
+  servings: ['Servings: 12 muffins'],
       intro: [
         'Beets are my favorite vegetable. They offer such a unique and wonderful flavor to these muffins.',
       'These don’t have any refined sugar and they’re vegan if using an egg replacer!',
@@ -44,6 +45,7 @@ export class RecipesService {
       src: 'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/recipes/cacao-scone-cover.jpg',
       photo: ['https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/recipes/cacao-scone.jpg'
     ],
+    servings: ['Servings: 8 squares'],
     ingredients: ['INGREDIENTS',
     '-Scones-',
     '1 ½ cups all purpose flour',
@@ -71,7 +73,19 @@ export class RecipesService {
     },
     {
       id: 3, name: 'Orange Vanilla Yogurt with Fruit and Coconut',
-      src:''
+      src: 'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/recipes/yogurt-cover.jpg',
+      photo: ['https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/recipes/yogurt.jpg'],
+      servings: ['Servings: 1 bowl'],
+      ingredients: ['INGREDIENTS',
+      '½ cup of Greek yogurt',
+      '1 tablespoon of orange juice',
+      '¼  teaspoon of pure vanilla extract',
+      '1 teaspoon of coconut ',
+      '1 cup of fruit (banana, berries, peaches, apple, etc. ) ',
+    ],
+    method: ['1. Mix yogurt, orange juice, and vanilla.',
+    '2. Top with coconut and fruit. I added sea buckthorn berries, lingonberries, and banana to my yogurt.'
+  ]
 
     }
   ];

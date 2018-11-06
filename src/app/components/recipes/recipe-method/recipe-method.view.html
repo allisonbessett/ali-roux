@@ -9,6 +9,9 @@
     </div>
 
     <div class="top">
+        <div class="servings" *ngFor="let servings of currentRecipe?.servings">
+            {{servings}}
+        </div>
         <div class="intro" *ngFor="let intro of currentRecipe?.intro">
             {{intro}}
         </div>
