@@ -8,7 +8,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-// import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule, MatGridListModule } from '@angular/material';
 
 @NgModule({

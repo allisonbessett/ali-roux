@@ -72,7 +72,7 @@ export class RecipesService {
 ]
     },
     {
-      id: 3, name: 'Orange Vanilla Yogurt with Fruit and Coconut',
+      id: 3, name: 'Orange Yogurt',
       src: 'https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/recipes/yogurt-cover.jpg',
       photo: ['https://raw.githubusercontent.com/allisonbessett/ali-roux/master/src/app/images/recipes/yogurt.jpg'],
       servings: ['Servings: 1 bowl'],

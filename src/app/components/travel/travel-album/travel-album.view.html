@@ -1,5 +1,5 @@
 <div class="travel">
-    <mat-grid-list cols="3" gutterSize="6px">
+    <mat-grid-list cols="2" gutterSize="6px">
         <mat-grid-tile *ngFor="let travelAlbum of travelAlbums" (click)="displayPhoto(travelAlbum.id)" [ngClass]="{selected: travelAlbum.id === selectedAlbum}">
             <div>
                 <img class="image" src={{travelAlbum.src}}/>

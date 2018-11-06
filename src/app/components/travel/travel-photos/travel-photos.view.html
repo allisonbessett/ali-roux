@@ -1,5 +1,5 @@
 <div class="travel-photos">
-    <mat-grid-list cols="3" gutterSize="6px">
+    <mat-grid-list [cols]="2" gutterSize="6px">
         <mat-grid-tile *ngFor="let photo of currentAlbum?.photo">
             <img class="photo" width="100%" src={{photo}}/>
         </mat-grid-tile>
