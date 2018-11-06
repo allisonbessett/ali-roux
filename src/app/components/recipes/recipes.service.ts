@@ -68,6 +68,11 @@ export class RecipesService {
   '8. Stir chcolate until smooth and add the heavy cream. Stir until consistent throughout.',
   '9. Drizzle chocolate on top of cooled scones.'
 ]
+    },
+    {
+      id: 3, name: 'Orange Vanilla Yogurt with Fruit and Coconut',
+      src:''
+
     }
   ];
 
