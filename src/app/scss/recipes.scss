@@ -101,4 +101,15 @@
         padding-top: 2rem;
         // text-align: right;
     }
+    @media screen and (max-width: 500px) {
+        mat-card {
+            padding-bottom: 10rem;
+        }
+        mat-grid-tile {
+            padding-bottom: 10rem;
+        }
+        .image-wrapper {
+            padding-bottom: 2rem;
+        }
+    }
 }
